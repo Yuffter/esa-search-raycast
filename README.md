@@ -1,3 +1,5 @@
+<img width="2172" height="724" alt="d50055ed-a766-47db-bb2b-672b3590fad7" src="https://github.com/user-attachments/assets/bb34fa43-536b-4eaa-89b4-cd8a25d87f14" />
+
 # esa Search (Raycast)
 
 複数のesaチームを横断して記事を検索するRaycast拡張です。チームごとにセクション分けして表示します。
