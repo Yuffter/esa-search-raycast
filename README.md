@@ -4,7 +4,7 @@
 
 ## セットアップ
 
-1. esaで個人用アクセストークンを発行（`https://<チーム名>.esa.io/user/applications` → Personal access tokens、権限は **Read** でOK）
+1. esaで個人用アクセストークンを発行（`https://<チーム名>.esa.io/user/applications` → Personal access tokens v1、権限は **Read** でOK）
 2. このフォルダで実行:
    ```
    npm install
@@ -13,7 +13,8 @@
 3. Raycastで `Search esa Posts` を開くと初回に設定を聞かれるので、トークンとチーム名（カンマ区切り）を入力
 4. 一度 `npm run dev` すればRaycastに登録され、以降は開発サーバーを止めても使えます
    （`npm run build` でも登録できます）
-
+   
+   ※もし、エラーが発生する場合はRaycastを再起動してください。
 ## 使い方
 
 - 検索窓に入力すると全チームを並列で検索（esaの検索構文 `category:foo` `tag:bar` `user:xxx` などがそのまま使えます）
