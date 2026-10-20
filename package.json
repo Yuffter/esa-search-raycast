@@ -1,0 +1,51 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "esa-search",
+  "title": "esa Search",
+  "description": "複数のesaチームを横断して記事を検索します",
+  "icon": "command-icon.png",
+  "author": "yuupon",
+  "license": "MIT",
+  "platforms": ["macOS"],
+  "categories": ["Productivity"],
+  "commands": [
+    {
+      "name": "search-posts",
+      "title": "Search esa Posts",
+      "subtitle": "esa",
+      "description": "設定した全チームの記事をまとめて検索します",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "accessToken",
+      "type": "password",
+      "required": true,
+      "title": "esa Access Token",
+      "description": "esaの個人用アクセストークン（read権限）。所属する全チームで共通です",
+      "placeholder": "xxxxxxxxxxxxxxxx"
+    },
+    {
+      "name": "teams",
+      "type": "textfield",
+      "required": true,
+      "title": "Teams",
+      "description": "検索対象のチーム名（URLの○○.esa.ioの○○部分）をカンマ区切りで",
+      "placeholder": "lab-a, lab-b, seminar"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.100.0",
+    "@raycast/utils": "^1.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.x",
+    "@types/react": "19.x",
+    "typescript": "^5.6.0"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop"
+  }
+}
